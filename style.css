@@ -1,5 +1,5 @@
 body{
-    background: url(img/background\ gura.jpg);
+    background: url(img/backgroud.jpg);
     font-family: "Lobster", serif;
     background-size: cover;
     background-position: center;
@@ -8,6 +8,7 @@ body{
     padding: 0;
     width: 100vw;
     height: 100dvh;
+    backdrop-filter: brightness(85%);
 }
 
 .container {
@@ -23,7 +24,7 @@ body{
 }
 
 .panel {
-    background: linear-gradient(30deg,#03f4fcad,#ff529aaf);
+    background: linear-gradient(30deg,#051c2bab,#686868af);
     box-sizing:border-box;
     border-radius: 2rem;
     display: flex;
@@ -51,7 +52,7 @@ body{
     border: unset;
     border-radius: 2rem;
     color: white;
-    background: linear-gradient(160deg,#ff00eac4,#ffffff);
+    background: linear-gradient(160deg,#ffffffc4,#000000);
     box-shadow: -2px 3px rgba(54, 54, 54, 0.486);
     
 }
@@ -59,7 +60,7 @@ button:hover{
     cursor: pointer;
     background-color: rgb(0, 25, 248);
     color: black;
-    box-shadow: 2px -2px rgba(0, 0, 0, 0.363);
+    box-shadow: 2px -2px rgba(0, 0, 0, 0.363);s
     
 }
 
@@ -67,7 +68,8 @@ button:hover{
 .btn {
     padding: 0.5rem 1rem;
     font-family: inherit;
-    border: 1px solid rgba(227, 255, 68, 0.767);
+    border: 1px solid rgba(0, 255, 213, 0.479);
+    border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
     
@@ -82,9 +84,9 @@ button:hover{
 }
 .btn:hover{
     border-radius: 0.5rem;
-    border-color: #ff00c8;
+    border-color: #ffffff;
     color: rgb(2, 0, 0);
-    text-shadow:  -2px 0px 1px#f1ff6fad;
+    text-shadow:  -2px 0px 1px#5f5f5f81;
     
 }
 
