@@ -1,5 +1,5 @@
 body{
-    background: url(img/backgroud.jpg);
+    background: url(img/background.jpg);
     font-family: "Lobster", serif;
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ body{
 }
 button:hover{
     cursor: pointer;
-    background-color: rgb(0, 25, 248);
+    background-color: rgb(255, 255, 255);
     color: black;
     box-shadow: 2px -2px rgba(0, 0, 0, 0.363);s
     
@@ -90,3 +90,50 @@ button:hover{
     
 }
 
+
+@keyframes beat {
+    0% {
+      transform: scale(1)
+      translateY(100px);
+    }
+    50% {
+      transform: scale(1.5)
+      translateY(-400px);
+    
+    }
+    100%{
+      transform: scale(1) 
+      translateY(100px);
+    }
+  }
+  
+  
+  .heart {
+      position:relative;
+      margin: 0 auto;
+      display: none;
+      top: 40%;
+      width: 90px;
+      height: 75px;
+      animation: beat 8s infinite;
+    }
+    
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 80px;
+      top: 0;
+      width: 80px;
+      height: 125px;
+      background-color: red;
+      border-radius: 100px 100px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }

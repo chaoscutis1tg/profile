@@ -11,10 +11,25 @@
     </head>
 
     <body>
+
+        <div id = "hide" class = "heart"></div>
         <div class="container">
             <div class="panel">
                 <img src="img/avatar.jpg">
-                <button>Iu Iu</button>
+                <button id='btn'>Iu Iu</button>
+                <script>
+                    const button = document.getElementById('btn');
+                    const effect = document.getElementById('hide');
+                    button.addEventListener('click', () => {
+                    if(effect.style.display === 'none' || effect.style.display === ''){
+                     effect.style.display = 'block';
+                    }
+                    else {
+                          effect.style.display = 'none';
+                    } 
+}
+)
+                </script>
                 <div class="links">
                     <a class="btn" href="https://www.tiktok.com/@chaoscutis1tg">Tik Tok</a>
                     <a class="btn" href="https://www.facebook.com/dokhoa2006">Facebook</a>
